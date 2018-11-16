@@ -1,13 +1,14 @@
 package club.gsjblog.springboot.freemark.action;
 
+import java.math.BigDecimal;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import club.gsjblog.springboot.freemark.bean.City;
 import club.gsjblog.springboot.freemark.service.ICityService;
@@ -36,5 +37,45 @@ public class CityController {
 	 * @PathVariable("cityname") String cityname URL 映射时，用于绑定请求参数到方法参数
 	 * 
 	 */
+
+	/**
+	 *  produces  还可以写成常亮
+	 * @param cityname
+	 * @return
+	 */
+	@RequestMapping(value="/api/city/{cityname}",method=RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@ResponseBody
+	public City findOneCity1(@PathVariable("cityname") String cityname) {
+		return cityservice.findCityInfo(cityname);
+	}
+
+
+	/**
+	 *  produces  还可以写成常亮
+	 * @param cityname
+	 * @return
+	 */
+//	@RequestMapping(value="/api/city/{cityname}",method=RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@GetMapping(value = "/api/city/{cityname}/{cityarea}")
+	@ResponseBody
+	public String findOthers(@PathVariable("cityname") String cityname ,
+						   @MatrixVariable(value = "low" , pathVar = "cityarea") int filterParams,@RequestParam String param) {
+
+		System.out.println(cityname);
+//        Set<String> cityareas = filterParams.keySet();
+//        if (cityareas.contains("low")){
+//            List<String> low = filterParams.get("low");
+//            for (String  str: low) {
+//                System.out.println("low"+str);
+//            }
+//        }
+        System.out.println(filterParams);
+
+        System.out.println(param);
+
+		return "";
+	}
+
+
 
 }
