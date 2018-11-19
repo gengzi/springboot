@@ -7,6 +7,7 @@
     <groupId>club.gsjblog.eureka.server</groupId>
     <artifactId>eureka-server</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 
     <parent>
@@ -36,5 +37,16 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+
+    <!--打包-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
