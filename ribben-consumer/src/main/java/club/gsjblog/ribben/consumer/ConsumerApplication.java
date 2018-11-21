@@ -2,6 +2,7 @@ package club.gsjblog.ribben.consumer;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -12,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
  */
 //注册为eureka的客户端，获取服务发现的能力
 @EnableDiscoveryClient
+@EnableCircuitBreaker
 @SpringBootApplication
 public class ConsumerApplication {
 

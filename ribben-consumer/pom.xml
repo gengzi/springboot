@@ -44,6 +44,17 @@
 
 
 
+        <!--2,添加spring cloud ribben 消费者 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+
+
+
+
+
+
     </dependencies>
 
     <dependencyManagement>
