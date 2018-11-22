@@ -71,10 +71,10 @@ public class ConsumerController {
          * responseType  请求响应体body 的包装类型
          * urlVariables   url参数绑定  参数为map
          */
-        HashMap<String, String> map = new HashMap<String, String>();
-        map.put("name","didi");
-        restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class,map);
-        String body = didi.getBody();
+//        HashMap<String, String> map = new HashMap<String, String>();
+//        map.put("name","didi");
+//        restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class,map);
+//        String body = didi.getBody();
 //        return body;
 
 
@@ -85,18 +85,18 @@ public class ConsumerController {
          * responseType  请求响应体body 的包装类型
          * urlVariables   url参数绑定  参数为map
          */
-        HashMap<String, String> map = new HashMap<String, String>();
-        map.put("name","didi");
-<<<<<<< HEAD
-        restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class,map);
-        String body = didi.getBody();
+//        HashMap<String, String> map = new HashMap<String, String>();
+//        map.put("name","didi");
+//<<<<<<< HEAD
+//        restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class,map);
+//        String body = didi.getBody();
+////        return body;
+//
+//=======
+//        ResponseEntity<String> entity = restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class, map);
+//        String body = entity.getBody();
 //        return body;
-
-=======
-        ResponseEntity<String> entity = restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class, map);
-        String body = entity.getBody();
-        return body;
->>>>>>> ef94481074ec9b8e59d186426f92d8d8a60a10d7
+//>>>>>>> ef94481074ec9b8e59d186426f92d8d8a60a10d7
 
         /**
          * 第二种  getforentity
@@ -105,9 +105,9 @@ public class ConsumerController {
          * responseType  请求响应体body 的包装类型
          */
 
-        restTemplate.getForEntity();
-        String body = didi.getBody();
-        return body;
+//        restTemplate.getForEntity();
+//        String body = didi.getBody();
+//        return body;
 
         /**
          * 第三种  getforentity
@@ -121,6 +121,8 @@ public class ConsumerController {
 
 
 //        return restTemplate.getForEntity("http://HELLO-SERVICE/hello",String.class).getBody();
+
+        return "";
     }
 
 

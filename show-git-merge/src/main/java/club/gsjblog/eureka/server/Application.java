@@ -20,7 +20,11 @@ public class Application {
 
         // c2: 线上版本
 
+        //c3: 在iss53 分支上修改bug，还未完成 第一版
+
         //c4:  修复hotfix 错误
+
+        //c5: 在iss53 分支上继续修复bug
 
     }
 }

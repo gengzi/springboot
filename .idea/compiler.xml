@@ -8,28 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-provider" />
         <module name="eureka-server" />
-        <module name="itcat-springboot" />
         <module name="ribben-consumer" />
-        <module name="springboot-freemark" />
-        <module name="springboot-freemark (1)" />
-        <module name="springboot-mybatis" />
       </profile>
     </annotationProcessing>
-<<<<<<< Updated upstream
-    <bytecodeTargetLevel target="1.8">
-      <module name="eureka-provider" target="1.8" />
-      <module name="eureka-server" target="1.8" />
-      <module name="ribben-consumer" target="1.8" />
-=======
     <bytecodeTargetLevel>
-      <module name="eureka-client01" target="1.6" />
+      <module name="eureka-provider" target="1.6" />
       <module name="eureka-server" target="1.6" />
-      <module name="itcat-springboot" target="1.7" />
       <module name="ribben-consumer" target="1.6" />
-      <module name="springboot-freemark" target="1.6" />
-      <module name="springboot-freemark (1)" target="1.5" />
-      <module name="springboot-mybatis" target="1.6" />
->>>>>>> Stashed changes
+      <module name="show-git-merge" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
