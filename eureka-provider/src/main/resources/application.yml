@@ -1,0 +1,7 @@
+spring:
+  application:
+    name:hello-server  # 建议使用小写，配置 服务消费者的 Name
+
+
+
+

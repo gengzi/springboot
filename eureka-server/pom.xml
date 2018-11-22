@@ -24,6 +24,13 @@
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
 
+
+        <!--&lt;!&ndash;spring security 的依赖&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-security</artifactId>-->
+        <!--</dependency>-->
+
     </dependencies>
 
     <dependencyManagement>
