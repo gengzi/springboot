@@ -48,10 +48,10 @@ public class ConsumerController {
          * responseType  请求响应体body 的包装类型
          * urlVariables   url参数绑定  参数为map
          */
-//        HashMap<String, String> map = new HashMap<String, String>();
-//        map.put("name","didi");
-//        restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class,map);
-//        String body = didi.getBody();
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("name","didi");
+        restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class,map);
+        String body = didi.getBody();
 //        return body;
 
 
@@ -66,8 +66,19 @@ public class ConsumerController {
         map.put("name","didi");
         restTemplate.getForEntity("http://USER-SERVICE/user?name={name}", String.class,map);
         String body = didi.getBody();
-        return body;
+//        return body;
 
+
+        /**
+         * 第二种  getforentity
+         *
+         * uri   url 对象实例
+         * responseType  请求响应体body 的包装类型
+         */
+
+        restTemplate.getForEntity();
+        String body = didi.getBody();
+        return body;
 
 
 

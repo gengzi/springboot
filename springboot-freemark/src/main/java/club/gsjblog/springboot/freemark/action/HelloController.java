@@ -1,5 +1,6 @@
 package club.gsjblog.springboot.freemark.action;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -35,6 +36,7 @@ public class HelloController {
 
 	@Autowired
 	private AsyncService service;
+	
 
 	@RequestMapping("/hello")
 	public String hello01(Model model, Map<String, Object> map) {
