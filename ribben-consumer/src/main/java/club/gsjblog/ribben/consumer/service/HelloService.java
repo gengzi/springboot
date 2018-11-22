@@ -18,7 +18,9 @@ public class HelloService {
 
     @HystrixCommand(fallbackMethod = "helloFallBack")
     public String helloService(){
-
+        // http://locahost:8080/hello
+        //v ip 虚拟ip
+        //其实就是在 提供者中配置中的 spring.application.name=hello-service
         return restTemplate.getForEntity("http://HELLO-SERVICE/hello",String.class).getBody();
     }
 
