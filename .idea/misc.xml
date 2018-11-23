@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/itcat-springboot" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot-freemark" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot-mybatis" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/itcat-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-freemark/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaclient01/pom.xml" />
+        <option value="$PROJECT_DIR$/ribben-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-actuator/pom.xml" />
+        <option value="$PROJECT_DIR$/show-git-change/pom.xml" />
+      </list>
+    </option>
+  </component>
+</project>

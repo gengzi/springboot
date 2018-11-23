@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka-provider/eureka-provider.iml" filepath="$PROJECT_DIR$/eureka-provider/eureka-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itcat-springboot/itcat-springboot.iml" filepath="$PROJECT_DIR$/itcat-springboot/itcat-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ribben-consumer/ribben-consumer.iml" filepath="$PROJECT_DIR$/ribben-consumer/ribben-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/show-git-change/show-git-change.iml" filepath="$PROJECT_DIR$/show-git-change/show-git-change.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-actuator/springboot-actuator.iml" filepath="$PROJECT_DIR$/springboot-actuator/springboot-actuator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-freemark/springboot-freemark.iml" filepath="$PROJECT_DIR$/springboot-freemark/springboot-freemark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" filepath="$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" />
+    </modules>
+  </component>
+</project>
